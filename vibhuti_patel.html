@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata - VIBHUTI PATEL</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fdf8f5;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .section-title {
+            position: relative;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            color: #831843; /* Rose 900 */
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 2px;
+            width: 50px;
+            background-color: #be185d; /* Rose 700 */
+        }
+
+        .detail-row {
+            display: flex;
+            margin-bottom: 0.75rem;
+            border-bottom: 1px dashed #fce7f3;
+            padding-bottom: 0.5rem;
+        }
+
+        .detail-label {
+            width: 35%;
+            font-weight: 500;
+            color: #4b5563;
+        }
+
+        .detail-value {
+            width: 65%;
+            color: #1f2937;
+            font-weight: 400;
+        }
+
+        /* Print styles to ensure it looks good when saved as PDF */
+        @media print {
+            body {
+                background: white;
+                -webkit-print-color-adjust: exact;
+            }
+            .main-container {
+                box-shadow: none !important;
+                max-width: 100% !important;
+                margin: 0 !important;
+                padding: 0 !important;
+            }
+        }
+    </style>
+</head>
+<body class="min-h-screen p-4 md:p-8 flex justify-center items-start">
+
+    <div class="main-container max-w-4xl w-full bg-white shadow-2xl rounded-2xl overflow-hidden flex flex-col md:flex-row mt-4 mb-8">
+        
+        <!-- Left Column: Photo and Basic Info -->
+        <div class="md:w-2/5 bg-gradient-to-b from-rose-50 to-white p-8 flex flex-col items-center border-r border-rose-100">
+            <!-- Image Container -->
+            <div class="w-full max-w-[280px] aspect-[3/4] mb-6 relative rounded-xl overflow-hidden shadow-lg border-4 border-white bg-gray-100 flex items-center justify-center">
+                <!-- Using the uploaded image name -->
+                <img src="add.jpg" alt="VIBHUTI PATEL" class="w-full h-full object-cover" onerror="this.onerror=null; this.src='https://placehold.co/400x500/fce7f3/831843?text=Photo';">
+            </div>
+
+            <h1 class="text-3xl md:text-4xl text-rose-900 font-bold mb-2 text-center tracking-wide">VIBHUTI <br/>PATEL</h1>
+            
+            <div class="w-16 h-1 bg-rose-300 rounded mb-6"></div>
+
+            <div class="w-full space-y-4 text-sm">
+                <div class="flex items-center space-x-3 text-gray-700">
+                    <div class="w-8 h-8 rounded-full bg-rose-100 flex items-center justify-center text-rose-600 flex-shrink-0">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <span class="font-medium">+91 8469406878</span>
+                </div>
+                
+                <div class="flex items-center space-x-3 text-gray-700">
+                    <div class="w-8 h-8 rounded-full bg-rose-100 flex items-center justify-center text-rose-600 flex-shrink-0">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <span>680/4455, Gujarat Housing Board, Bapunagar, Ahmedabad-24.</span>
+                </div>
+
+                <div class="flex items-center space-x-3 text-gray-700">
+                    <div class="w-8 h-8 rounded-full bg-rose-100 flex items-center justify-center text-rose-600 flex-shrink-0">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <span>Traveling, Reading, Listening Music, Photography</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Column: Detailed Information -->
+        <div class="md:w-3/5 p-8 md:p-10 bg-white">
+            
+            <!-- Personal Details -->
+            <div class="mb-8">
+                <h2 class="text-2xl font-bold section-title flex items-center gap-2">
+                    <i class="fas fa-user-circle text-rose-400 text-xl"></i> Personal Details
+                </h2>
+                <div class="space-y-1">
+                    <div class="detail-row">
+                        <div class="detail-label">Date of Birth</div>
+                        <div class="detail-value">16-April-2002</div>
+                    </div>
+                    <div class="detail-row">
+                        <div class="detail-label">Height</div>
+                        <div class="detail-value">5'2"</div>
+                    </div>
+                    <div class="detail-row">
+                        <div class="detail-label">Weight</div>
+                        <div class="detail-value">62 Kg</div>
+                    </div>
+                    <div class="detail-row">
+                        <div class="detail-label">Religion</div>
+                        <div class="detail-value">Hindu</div>
+                    </div>
+                    <div class="detail-row">
+                        <div class="detail-label">Caste</div>
+                        <div class="detail-value">Lauva Patel</div>
+                    </div>
+                    <div class="detail-row">
+                        <div class="detail-label">Native Place</div>
+                        <div class="detail-value">Shahpur, Ahmedabad</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Education & Career -->
+            <div class="mb-8">
+                <h2 class="text-2xl font-bold section-title flex items-center gap-2">
+                    <i class="fas fa-graduation-cap text-rose-400 text-xl"></i> Education & Career
+                </h2>
+                <div class="space-y-1">
+                    <div class="detail-row">
+                        <div class="detail-label">Education</div>
+                        <div class="detail-value font-medium">M.Sc. Data Science</div>
+                    </div>
+                    <div class="detail-row">
+                        <div class="detail-label">Work Place</div>
+                        <div class="detail-value">Information Retrieval Language Processing Lab</div>
+                    </div>
+                    <div class="detail-row">
+                        <div class="detail-label">Location</div>
+                        <div class="detail-value">Gandhinagar</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Family Details -->
+            <div class="mb-8">
+                <h2 class="text-2xl font-bold section-title flex items-center gap-2">
+                    <i class="fas fa-users text-rose-400 text-xl"></i> Family Details
+                </h2>
+                <div class="space-y-1">
+                    <div class="detail-row">
+                        <div class="detail-label">Father's Name</div>
+                        <div class="detail-value">Kishorbhai Ramanbhai Patel</div>
+                    </div>
+                    <div class="detail-row">
+                        <div class="detail-label">Father's Occupation</div>
+                        <div class="detail-value">Gayatri Enterprise</div>
+                    </div>
+                    <div class="detail-row">
+                        <div class="detail-label">Mother's Name</div>
+                        <div class="detail-value">Sangitaben Kishorbhai Patel</div>
+                    </div>
+                    <div class="detail-row">
+                        <div class="detail-label">Brother</div>
+                        <div class="detail-value">Darshil Kishorbhai Patel (Unmarried)</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Maternal Details -->
+            <div class="mb-4">
+                <h2 class="text-2xl font-bold section-title flex items-center gap-2">
+Maternal Details
+                </h2>
+                <div class="bg-rose-50/50 p-4 rounded-lg border border-rose-100">
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Sanjaybhai Keshubhai Vaishnav</li>
+                        <li>Aahwinbhai Keshubhai Vaishnav</li>
+                        <li><span class="font-medium text-gray-900">Village:</span> Prempara</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
